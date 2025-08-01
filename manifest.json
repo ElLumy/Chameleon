@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "Chameleon - Advanced Anti-Fingerprinting",
+  "version": "1.0.0",
+  "description": "Genera perfiles de navegador dinámicos y plausibles para mitigar el fingerprinting avanzado.",
+  "minimum_chrome_version": "137",
+  "permissions": [
+    "scripting",
+    "storage",
+    "tabs",
+    "cookies",
+    "browsingData"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "lib/seedrandom.min.js",
+        "data/profiles-data.js",
+        "content/chameleon-core.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "ui/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "data/profiles.json",
+        "data/vpn-ranges.json"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

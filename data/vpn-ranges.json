@@ -1,0 +1,94 @@
+{
+  "commercialVPNs": [
+    {
+      "name": "NordVPN",
+      "asns": [60068, 396356],
+      "keywords": ["nordvpn", "nord vpn", "nordlynx"],
+      "ipRanges": [
+        "185.225.28.0/22",
+        "185.244.214.0/23",
+        "37.19.192.0/19"
+      ]
+    },
+    {
+      "name": "ExpressVPN",
+      "asns": [59253],
+      "keywords": ["expressvpn", "express vpn"],
+      "ipRanges": [
+        "104.248.0.0/13",
+        "45.87.212.0/22"
+      ]
+    },
+    {
+      "name": "Surfshark",
+      "asns": [213252],
+      "keywords": ["surfshark"],
+      "ipRanges": [
+        "195.181.160.0/19",
+        "91.218.242.0/24"
+      ]
+    },
+    {
+      "name": "CyberGhost",
+      "asns": [133752],
+      "keywords": ["cyberghost"],
+      "ipRanges": [
+        "185.162.8.0/22",
+        "89.46.72.0/21"
+      ]
+    },
+    {
+      "name": "ProtonVPN",
+      "asns": [62371],
+      "keywords": ["protonvpn", "proton vpn"],
+      "ipRanges": [
+        "185.159.157.0/24",
+        "185.242.4.0/22"
+      ]
+    }
+  ],
+  "datacenters": [
+    {
+      "name": "Amazon AWS",
+      "keywords": ["amazon", "aws", "ec2"],
+      "suspicious": true
+    },
+    {
+      "name": "Google Cloud",
+      "keywords": ["google", "gcp", "google cloud"],
+      "suspicious": true
+    },
+    {
+      "name": "Microsoft Azure",
+      "keywords": ["microsoft", "azure"],
+      "suspicious": true
+    },
+    {
+      "name": "DigitalOcean",
+      "keywords": ["digitalocean", "digital ocean"],
+      "suspicious": true
+    },
+    {
+      "name": "Linode",
+      "keywords": ["linode", "akamai"],
+      "suspicious": true
+    }
+  ],
+  "residentialProxies": [
+    {
+      "name": "Bright Data",
+      "keywords": ["luminati", "bright data"],
+      "suspicious": false
+    },
+    {
+      "name": "Oxylabs",
+      "keywords": ["oxylabs"],
+      "suspicious": false
+    },
+    {
+      "name": "Smartproxy",
+      "keywords": ["smartproxy"],
+      "suspicious": false
+    }
+  ]
+}
